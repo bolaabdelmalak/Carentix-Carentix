@@ -98,7 +98,7 @@ export default function Page() {
       <section style={{ background: "#0C1E3C", color: "#FAFAF7", position: "relative", overflow: "hidden" }}>
         <div className="cx-anim" aria-hidden style={{ position: "absolute", top: -160, right: -120, width: 560, height: 560, borderRadius: "50%", background: "radial-gradient(circle, rgba(254,197,57,0.12), transparent 62%)", animation: "cxDrift 24s ease-in-out infinite" }} />
         <div style={{ position: "relative", maxWidth: 1320, margin: "0 auto", padding: "clamp(80px, 11vw, 156px) 32px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "clamp(28px, 5vw, 64px)", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "clamp(28px, 5vw, 64px)", alignItems: "center" }}>
             <div data-reveal style={{ fontFamily: SERIF, fontWeight: 600, fontSize: "clamp(64px, 9vw, 132px)", lineHeight: 0.92, letterSpacing: "-0.04em", color: "#FEC539" }}>Hours back,<br />every week.</div>
             <div data-reveal style={{ display: "flex", flexDirection: "column" }}>
               {proofStats.map((s, i) => (
@@ -119,7 +119,7 @@ export default function Page() {
           <div data-reveal style={{ maxWidth: 760, marginBottom: "clamp(48px, 6vw, 72px)" }}>
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 64px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#13294B", margin: 0, textWrap: "balance" }}>The same clinic, two very different weeks.</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 1, background: "rgba(19,41,75,0.12)", border: "1px solid rgba(19,41,75,0.12)", borderRadius: 4, overflow: "hidden" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: 1, background: "rgba(19,41,75,0.12)", border: "1px solid rgba(19,41,75,0.12)", borderRadius: 4, overflow: "hidden" }}>
             <div data-reveal style={{ background: "#F3F0E8", padding: "clamp(28px, 3.5vw, 48px)" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 26 }}><span style={{ width: 8, height: 8, borderRadius: "50%", background: "rgba(74,74,69,0.4)" }} /><span style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(74,74,69,0.7)" }}>A typical week, today</span></div>
               <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 20 }}>
@@ -182,7 +182,7 @@ export default function Page() {
           <div data-reveal style={{ maxWidth: 720, marginBottom: "clamp(48px, 6vw, 72px)" }}>
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 64px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#13294B", margin: 0, textWrap: "balance" }}>From first call to fully embedded, in four steps.</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(248px, 1fr))", gap: 24 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(248px, 100%), 1fr))", gap: 24 }}>
             {steps.map((step, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "#FAFAF7", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 20, padding: "32px 30px" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 26 }}>
@@ -225,7 +225,7 @@ export default function Page() {
             <span style={{ fontSize: "12.5px", fontWeight: 500, letterSpacing: "0.04em", color: "rgba(250,250,247,0.66)" }}>Compliance, by design</span>
           </div>
           <h2 data-reveal style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5.4vw, 70px)", lineHeight: 1.0, letterSpacing: "-0.04em", color: "#FAFAF7", margin: "0 0 clamp(44px, 5vw, 64px)", maxWidth: "20ch", textWrap: "balance" }}>For us, HIPAA is built into the <span style={{ color: "#FEC539" }}>architecture</span> — not added at the end.</h2>
-          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 1, background: "rgba(250,250,247,0.14)", border: "1px solid rgba(250,250,247,0.14)", borderRadius: 4, overflow: "hidden" }}>
+          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(180px, 100%), 1fr))", gap: 1, background: "rgba(250,250,247,0.14)", border: "1px solid rgba(250,250,247,0.14)", borderRadius: 4, overflow: "hidden" }}>
             {complianceStats.map((c, i) => (
               <div key={i} style={{ background: "#0C1E3C", padding: "34px 28px" }}>
                 <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: "clamp(34px, 4vw, 48px)", color: "#FEC539", lineHeight: 1, letterSpacing: "-0.02em" }}>{c.value}</div>
@@ -243,7 +243,7 @@ export default function Page() {
         <div style={{ maxWidth: 1080, margin: "0 auto" }}>
           <div data-reveal style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 24 }}>
             <div style={{ fontFamily: SERIF, fontSize: 19, color: "#13294B", maxWidth: "28ch", lineHeight: 1.4 }}>Real people behind your practice — trained, vetted, and supervised. One accountable team, never a rotating pool.</div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", rowGap: 8 }}>
               {team.map((role, i) => (
                 <div key={i} style={{ marginLeft: i === 0 ? 0 : -16, position: "relative" }} title={role}>
                   <div style={{ padding: 4, background: "#FAFAF7", borderRadius: "50%" }}>
@@ -261,7 +261,7 @@ export default function Page() {
 
       {/* FAQ */}
       <section id="faq" style={{ background: "#F3F0E8", padding: "clamp(80px, 11vw, 156px) 32px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
           <div data-reveal style={{ position: "sticky", top: 110 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 13, marginBottom: 22 }}>
               <span style={{ width: 34, height: 1, background: "#5B8C7B" }} />

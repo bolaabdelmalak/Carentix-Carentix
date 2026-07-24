@@ -156,7 +156,7 @@ export default function Page() {
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 62px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#FAFAF7", margin: "0 0 20px", textWrap: "balance" }}>A different kind of place to build a career.</h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "rgba(250,250,247,0.72)", margin: 0 }}>Outsourcing moves work somewhere cheaper. We do the opposite: we invest in people, hold a standard the industry hasn’t defined yet, and reward the results that follow. You leave here a professional — an owner and a leader, not simply an operator.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 18 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: 18 }}>
             {whyCards.map((c, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "rgba(250,250,247,0.05)", border: "1px solid rgba(250,250,247,0.13)", borderRadius: 22, padding: "30px 28px" }}>
                 <div style={{ width: 52, height: 52, borderRadius: 15, background: c.tint, display: "flex", alignItems: "center", justifyContent: "center", color: c.color, marginBottom: 22 }}>
@@ -242,7 +242,7 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <div data-reveal style={{ marginTop: 28, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16 }}>
+          <div data-reveal style={{ marginTop: 28, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16 }}>
             <div style={{ background: "#F3F0E8", borderRadius: 18, padding: "24px 26px" }}>
               <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 17, color: "#13294B", marginBottom: 8 }}>Two high tracks, not one</div>
               <p style={{ fontSize: 14, lineHeight: 1.55, color: "#4A4A45", margin: 0 }}>Not every great operator wants to manage people. A technical / specialist track lets depth experts reach Lead-level seniority and scope without ever managing a team.</p>
@@ -273,7 +273,7 @@ export default function Page() {
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 62px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#FAFAF7", margin: "0 0 18px", textWrap: "balance" }}>We invest in people when others cut.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: "rgba(250,250,247,0.7)", margin: 0, maxWidth: "58ch" }}>The industry treats people as a cost to minimize. We treat them as the asset that compounds — and we back that with real investment.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 18 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(250px, 100%), 1fr))", gap: 18 }}>
             {benefits.map((b, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "rgba(250,250,247,0.05)", border: "1px solid rgba(250,250,247,0.13)", borderRadius: 22, padding: "30px 28px" }}>
                 <div style={{ width: 50, height: 50, borderRadius: 15, background: b.tint, display: "flex", alignItems: "center", justifyContent: "center", color: b.color, marginBottom: 22 }}>
@@ -338,7 +338,7 @@ export default function Page() {
           <div data-reveal style={{ maxWidth: 720, marginBottom: "clamp(48px, 6vw, 70px)" }}>
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 62px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#13294B", margin: 0, textWrap: "balance" }}>How selection works.</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 24 }}>
             {hiring.map((h, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "#FAFAF7", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 20, padding: "30px 28px" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 22 }}>
@@ -355,7 +355,7 @@ export default function Page() {
 
       {/* FAQ */}
       <section id="faq" style={{ background: "#FAFAF7", padding: "clamp(80px, 11vw, 150px) 32px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
           <div data-reveal style={{ position: "sticky", top: 110 }}>
             {eyebrowRow("Candidate questions")}
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.04, letterSpacing: "-0.035em", color: "#13294B", margin: "0 0 20px", textWrap: "balance" }}>The things people ask before they apply.</h2>

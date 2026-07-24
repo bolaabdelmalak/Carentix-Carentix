@@ -82,7 +82,7 @@ export default function Page() {
 
       {/* GLANCE */}
       <section style={{ background: "#FAFAF7", padding: "0 32px clamp(40px, 5vw, 60px)" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 18 }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(240px, 100%), 1fr))", gap: 18 }}>
           {glance.map((g, i) => (
             <div key={i} data-reveal className="cx-lift" style={{ background: "#fff", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 20, padding: "30px 28px" }}>
               <div style={{ width: 46, height: 46, borderRadius: 13, background: "rgba(91,140,123,0.14)", display: "flex", alignItems: "center", justifyContent: "center", color: "#5B8C7B", marginBottom: 18 }}>
@@ -121,7 +121,7 @@ export default function Page() {
             {eyebrowRow("02", "Why you need one & when it’s signed")}
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(30px, 4.4vw, 56px)", lineHeight: 1.04, letterSpacing: "-0.03em", color: "#13294B", margin: 0, textWrap: "balance" }}>Required by law. Signed before day one.</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 22 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 22 }}>
             {whyWhen.map((w, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "#FAFAF7", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 20, padding: "32px 30px" }}>
                 <div style={{ width: 50, height: 50, borderRadius: 14, background: w.tint, display: "flex", alignItems: "center", justifyContent: "center", color: w.color, marginBottom: 22 }}>
@@ -176,7 +176,7 @@ export default function Page() {
             {eyebrowRow("04", "What our BAA guarantees")}
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(30px, 4.4vw, 56px)", lineHeight: 1.04, letterSpacing: "-0.03em", color: "#13294B", margin: 0, textWrap: "balance" }}>The commitments inside the contract.</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 18 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(250px, 100%), 1fr))", gap: 18 }}>
             {commitments.map((c, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "#FAFAF7", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 20, padding: "32px 30px" }}>
                 <div className="cx-sg-ic" style={{ width: 50, height: 50, borderRadius: 14, background: "rgba(254,197,57,0.18)", display: "flex", alignItems: "center", justifyContent: "center", color: "#B8902A", marginBottom: 22 }}>
@@ -192,7 +192,7 @@ export default function Page() {
 
       {/* FAQ */}
       <section style={{ background: "#FAFAF7", padding: "clamp(80px, 11vw, 150px) 32px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "clamp(36px, 5vw, 72px)", alignItems: "start" }}>
           <div data-reveal style={{ position: "sticky", top: 110 }}>
             {eyebrowRow("05", "BAA questions")}
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.04, letterSpacing: "-0.035em", color: "#13294B", margin: "0 0 20px", textWrap: "balance" }}>Answered plainly.</h2>

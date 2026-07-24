@@ -48,7 +48,7 @@ export default function CookieConsent() {
         position: "fixed",
         left: 16,
         right: 16,
-        bottom: 16,
+        bottom: "calc(16px + env(safe-area-inset-bottom))",
         zIndex: 200,
         display: "flex",
         justifyContent: "center",

@@ -641,3 +641,20 @@ textarea:focus-visible {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Footer: the 4-column grid collapses so link columns never overflow on
+   mobile. The brand/description cell spans the full width on top. */
+@media (max-width: 820px) {
+  .cx-footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 34px 24px !important;
+  }
+  .cx-footer-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 480px) {
+  .cx-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

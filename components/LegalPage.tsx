@@ -67,7 +67,7 @@ export default function LegalPage({ data }: { data: LegalPageData }) {
 
       {/* AT A GLANCE */}
       <section style={{ background: "#13294B", padding: "clamp(44px, 6vw, 72px) 32px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 18 }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(230px, 100%), 1fr))", gap: 18 }}>
           {data.glance.map((g) => (
             <div key={g.title} data-reveal className="cx-glass" style={{ position: "relative", overflow: "hidden", background: "linear-gradient(150deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03))", border: "1px solid rgba(250,250,247,0.14)", borderRadius: 22, padding: "30px 28px", backdropFilter: "blur(8px)" }}>
               <div className="cx-glow" aria-hidden style={{ position: "absolute", top: -40, right: -40, width: 150, height: 150, borderRadius: "50%", background: "radial-gradient(circle, rgba(254,197,57,0.22), transparent 65%)" }} />

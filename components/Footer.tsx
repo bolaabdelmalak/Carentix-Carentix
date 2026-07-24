@@ -19,6 +19,7 @@ export default function Footer() {
     >
       <div style={{ maxWidth: 1320, margin: "0 auto" }}>
         <div
+          className="cx-footer-grid"
           style={{
             display: "grid",
             gridTemplateColumns:

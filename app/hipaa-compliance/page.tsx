@@ -150,7 +150,7 @@ export default function Page() {
       {/* TRUST STAT BAND */}
       <section style={{ background: "#13294B", color: "#FAFAF7" }}>
         <div style={{ maxWidth: 1320, margin: "0 auto", padding: "clamp(48px, 6vw, 72px) 32px" }}>
-          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 1, background: "rgba(250,250,247,0.14)", border: "1px solid rgba(250,250,247,0.14)", borderRadius: 4, overflow: "hidden" }}>
+          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(160px, 100%), 1fr))", gap: 1, background: "rgba(250,250,247,0.14)", border: "1px solid rgba(250,250,247,0.14)", borderRadius: 4, overflow: "hidden" }}>
             {trustStats.map((s, i) => (
               <div key={i} style={{ background: "#13294B", padding: "30px 24px" }}>
                 <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: "clamp(32px, 4vw, 46px)", color: "#FEC539", lineHeight: 1, letterSpacing: "-0.02em" }}>{s.value}</div>
@@ -183,7 +183,7 @@ export default function Page() {
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(34px, 5vw, 62px)", lineHeight: 1.02, letterSpacing: "-0.035em", color: "#13294B", margin: "0 0 18px", textWrap: "balance" }}>Administrative, technical, and physical — covered.</h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "#4A4A45", margin: 0, maxWidth: "60ch" }}>The HIPAA Security Rule defines three categories of safeguards. We hold ourselves to each, with documented controls you can review.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 22 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(290px, 100%), 1fr))", gap: 22 }}>
             {safeguards.map((g, i) => (
               <div key={i} data-reveal className="cx-lift" style={{ background: "#FAFAF7", border: "1px solid rgba(19,41,75,0.09)", borderRadius: 22, padding: "34px 30px", position: "relative", overflow: "hidden" }}>
                 <div aria-hidden style={{ position: "absolute", top: -40, right: -30, width: 150, height: 150, borderRadius: "47% 53% 44% 56% / 55% 48% 52% 45%", background: g.blob }} />
@@ -230,7 +230,7 @@ export default function Page() {
 
       {/* BUSINESS ASSOCIATE RESPONSIBILITIES */}
       <section style={{ background: "#F3F0E8", padding: "clamp(80px, 11vw, 150px) 32px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "clamp(36px, 5vw, 64px)", alignItems: "center" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "clamp(36px, 5vw, 64px)", alignItems: "center" }}>
           <div data-reveal>
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(28px, 4vw, 48px)", lineHeight: 1.06, letterSpacing: "-0.03em", color: "#13294B", margin: "0 0 18px", textWrap: "balance" }}>We sign before we access your records.</h2>
             <p style={{ fontSize: "16.5px", lineHeight: 1.62, color: "#4A4A45", margin: "0 0 26px", maxWidth: "56ch" }}>As your Business Associate, we are directly and legally liable under HIPAA — not just contractually. A signed BAA is in place before any PHI access, full stop. The accountability for our people, our tools, and our AI is ours, never yours.</p>
@@ -260,7 +260,7 @@ export default function Page() {
             <h2 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(32px, 5vw, 60px)", lineHeight: 1.02, letterSpacing: "-0.04em", color: "#FAFAF7", margin: "0 0 18px", maxWidth: "20ch", textWrap: "balance" }}>If something goes wrong, you hear it from us first.</h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "rgba(250,250,247,0.74)", margin: 0, maxWidth: "60ch" }}>Our standard process targets an internal root-cause review within 24 hours of a Level 1 event, with prompt notification to you. This describes our internal review; the contractual breach-notification timeline is the one set in your BAA.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 18 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(180px, 100%), 1fr))", gap: 18 }}>
             {incident.map((i2, i) => (
               <div key={i} data-reveal style={{ background: "rgba(250,250,247,0.04)", border: "1px solid rgba(250,250,247,0.12)", borderRadius: 18, padding: "26px 24px" }}>
                 <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 15, color: "#FEC539", marginBottom: 16 }}>{i2.step}</div>
@@ -277,7 +277,7 @@ export default function Page() {
         <div style={{ maxWidth: 1080, margin: "0 auto" }}>
           <blockquote data-reveal style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(26px, 3.6vw, 44px)", lineHeight: 1.24, color: "#13294B", margin: "0 0 28px", letterSpacing: "-0.02em", textWrap: "pretty", maxWidth: "24ch" }}>Compliance is the product — so it’s everyone’s job, every day.</blockquote>
           <p data-reveal style={{ fontSize: 17, lineHeight: 1.66, color: "#4A4A45", margin: "0 0 36px", maxWidth: "64ch" }}>AI tools are reviewed quarterly. Vendor BAAs are kept current. Access is audited, training is refreshed annually, and every new workflow is designed with compliance checkpoints before it ships. This isn’t a department — it’s a culture, reinforced by our Constitution and measured like any other outcome.</p>
-          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+          <div data-reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16 }}>
             {monitoring.map((m, i) => (
               <div key={i} style={{ background: "#F3F0E8", borderRadius: 18, padding: "24px 26px" }}>
                 <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 17, color: "#13294B", marginBottom: 8 }}>{m.title}</div>
