@@ -658,3 +658,13 @@ textarea:focus-visible {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Careers hero heading: on phones, drop the desktop narrow-column cap
+   (max-width: 15ch) so the heading uses the available width and the phrase
+   "healthcare operations" stays connected instead of being forced narrow.
+   Tablet/desktop keep the approved 15ch column. */
+@media (max-width: 480px) {
+  .cx-careers-h1 {
+    max-width: 100% !important;
+  }
+}
