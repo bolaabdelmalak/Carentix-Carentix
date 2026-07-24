@@ -111,14 +111,14 @@ export default function Page() {
       <section id="top" style={{ position: "relative", overflow: "hidden", background: "#0C1E3C" }}>
         <Image src="/images/careers-hero.jpg" alt="Professionals building their careers in healthcare operations" className="cx-hero-bg" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "center" }} />
         <div className="cx-hero-tint" aria-hidden />
-        <div className="cx-hero-scrim" aria-hidden style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,30,60,0.5) 0%, rgba(12,30,60,0.58) 46%, rgba(12,30,60,0.95) 100%)" }} />
-        <div style={{ position: "relative", zIndex: 2, maxWidth: 1320, margin: "0 auto", padding: "clamp(150px, 19vw, 244px) 32px clamp(56px, 7vw, 84px)" }}>
+        <div aria-hidden style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,30,60,0.5) 0%, rgba(12,30,60,0.58) 46%, rgba(12,30,60,0.95) 100%)" }} />
+        <div style={{ position: "relative", zIndex: 2, maxWidth: 1320, margin: "0 auto", padding: "clamp(116px, 19vw, 244px) 32px clamp(56px, 7vw, 84px)" }}>
           <div style={{ maxWidth: 680 }}>
             <div data-reveal style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: "clamp(26px, 3.5vw, 38px)", background: "rgba(91,140,123,0.16)", border: "1px solid rgba(91,140,123,0.36)", padding: "8px 15px", borderRadius: 999 }}>
               <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#5B8C7B" }} />
               <span style={{ fontSize: 13, fontWeight: 500, color: "#DCEFE7" }}>Now Hiring</span>
             </div>
-            <h1 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(42px, 6vw, 84px)", lineHeight: 1.0, letterSpacing: "-0.04em", margin: 0, color: "#FAFAF7", maxWidth: "15ch", textWrap: "balance" }}>
+            <h1 style={{ fontFamily: SERIF, fontWeight: 500, fontSize: "clamp(32px, 6vw, 84px)", lineHeight: 1.0, letterSpacing: "-0.04em", margin: 0, color: "#FAFAF7", maxWidth: "15ch", textWrap: "balance" }}>
               <span data-reveal style={{ display: "block" }}>Build the future of</span>
               <span data-reveal style={{ display: "block" }}>healthcare <span style={{ position: "relative", color: "#FEC539", whiteSpace: "nowrap" }}>operations<svg viewBox="0 0 200 14" preserveAspectRatio="none" style={{ position: "absolute", left: 0, bottom: "-0.08em", width: "100%", height: "0.16em", overflow: "visible" }}><path d="M3 9 C 55 3, 150 3, 197 8" fill="none" stroke="#FEC539" strokeWidth="6" strokeLinecap="round" /></svg></span></span>
             </h1>
